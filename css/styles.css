@@ -17,7 +17,7 @@
 }
 
 .bg {
-	background: url(/images/bg-ph.png) no-repeat;
+	background: url(/Portfolio/images/bg-ph.png) no-repeat;
 	height: 100vh;
 	transition: opacity 0.5s ease-in-out;
 }
