@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&display=swap");
+
+/* Global Styles */
+:root {
+	--primary-color: #fc3939;
+	--dark-color: #343a40;
+	--light-color: #f4f4f4;
+	--danger-color: #dc3545;
+	--success-color: #28a745;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Raleway", sans-serif;
+}
+
+.bg {
+	background: url(/images/bg-ph.png) no-repeat;
+	height: 100vh;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.full-size {
+	position: relative;
+	outline: none;
+	overflow: visible;
+}
+
+.bg-inner {
+	height: 100vh;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.bg-inner-sayhi {
+	height: 70vh;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.zoom {
+	transition: transform 0.2s;
+}
+
+.zoom:hover {
+	transform: scale(1.5);
+}
+
+.custom-nav-link {
+	color: #000 !important;
+}
+
+.custom-nav-link:hover {
+	color: var(--primary-color) !important;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+main {
+	visibility: hidden;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+main.fade-in {
+	visibility: visible;
+	animation: fadeIn 1s ease-in-out;
+}
+
+.cont {
+	position: relative;
+}
+
+.image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
+}
+
+.middle {
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.cont:hover .image {
+	opacity: 0.3;
+}
+
+.cont:hover .middle {
+	opacity: 1;
+}
+
+.text {
+	font-weight: 900;
+	color: #000;
+	/* -webkit-text-stroke: 0.2px black; */
+	font-size: 16px;
+	padding: 16px 32px;
+}
+
+/* CSS for screens till 1180px */
+@media (min-width: 1250px) {
+	.start-20 {
+		left: 20%;
+	}
+}
+
+/* CSS for screens up to 1180px */
+@media (max-width: 1250px) {
+	.start-20 {
+		left: 10%;
+	}
+}
+
+/* CSS for screens till 1180px */
+@media (min-width: 768px) {
+	.full-size-about {
+		position: relative;
+		outline: none;
+		overflow: visible;
+	}
+
+	.bg-inner-about {
+		height: 90vh;
+		width: 60%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+/* CSS for screens up to 1180px */
+@media (max-width: 768px) {
+	.full-size-about {
+		position: relative;
+		outline: none;
+		overflow: visible;
+	}
+
+	.bg-inner-about {
+		height: 60vh;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+}
