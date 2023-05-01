@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
 
 /* Global Styles */
 :root {
@@ -13,11 +13,14 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: "Raleway", sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 .bg {
-	background: url(../images/bg-ph.png) no-repeat;
+	background: url(../images/bg-ph.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 	height: 100vh;
 	transition: opacity 0.5s ease-in-out;
 }
