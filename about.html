@@ -65,7 +65,7 @@
 					href="index.html"
 				>
 					<img
-						src="images/logo.svg"
+						src="images/logo2.png"
 						alt="Logo"
 						width="150"
 						height="150"
@@ -127,67 +127,58 @@
 
 		<!-- Main -->
 		<main>
-			<div class="full-size-about">
-				<div class="position-relative">
-					<div
-						class="position-absolute top-0 start-50 translate-middle-x"
-					>
-						<p class="fs-1">ABOUT</p>
+			<div
+				id="carouselExampleAutoplaying"
+				class="carousel slide bg-inner-about slideshow"
+				data-bs-ride="carousel"
+			>
+				<div class="carousel-inner zoom">
+					<div class="carousel-item active border border-5">
+						<img
+							src="./images/about1.png"
+							class="d-block w-100"
+							alt="slide1"
+						/>
+					</div>
+					<div class="carousel-item border border-5">
+						<img
+							src="./images/about2.png"
+							class="d-block w-100"
+							alt="slide2"
+						/>
+					</div>
+					<div class="carousel-item border border-5">
+						<img
+							src="./images/about3.png"
+							class="d-block w-100"
+							alt="slide3"
+						/>
 					</div>
 				</div>
-				<div
-					id="carouselExampleAutoplaying"
-					class="carousel slide bg-inner-about slideshow"
-					data-bs-ride="carousel"
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselExampleAutoplaying"
+					data-bs-slide="prev"
 				>
-					<div class="carousel-inner zoom">
-						<div class="carousel-item active border border-5">
-							<img
-								src="./images/about1.png"
-								class="d-block w-100"
-								alt="slide1"
-							/>
-						</div>
-						<div class="carousel-item border border-5">
-							<img
-								src="./images/about2.png"
-								class="d-block w-100"
-								alt="slide2"
-							/>
-						</div>
-						<div class="carousel-item border border-5">
-							<img
-								src="./images/about3.png"
-								class="d-block w-100"
-								alt="slide3"
-							/>
-						</div>
-					</div>
-					<button
-						class="carousel-control-prev"
-						type="button"
-						data-bs-target="#carouselExampleAutoplaying"
-						data-bs-slide="prev"
-					>
-						<span
-							class="carousel-control-prev-icon"
-							aria-hidden="true"
-						></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button
-						class="carousel-control-next"
-						type="button"
-						data-bs-target="#carouselExampleAutoplaying"
-						data-bs-slide="next"
-					>
-						<span
-							class="carousel-control-next-icon"
-							aria-hidden="true"
-						></span>
-						<span class="visually-hidden">Next</span>
-					</button>
-				</div>
+					<span
+						class="carousel-control-prev-icon"
+						aria-hidden="true"
+					></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExampleAutoplaying"
+					data-bs-slide="next"
+				>
+					<span
+						class="carousel-control-next-icon"
+						aria-hidden="true"
+					></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 			</div>
 		</main>
 

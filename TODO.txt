@@ -1,7 +1,7 @@
 Add each page for work
 
+View full profile in insta.html
+
 Mobile view of work.html 
 
-Add photos
-
-Inside page of works
+Add photos to work.html
