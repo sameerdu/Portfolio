@@ -17,7 +17,7 @@
 }
 
 .bg {
-	background: url(/Portfolio/images/bg-ph.png) no-repeat;
+	background: url(../images/bg-ph.png) no-repeat;
 	height: 100vh;
 	transition: opacity 0.5s ease-in-out;
 }
@@ -31,6 +31,16 @@
 .bg-inner {
 	height: 100vh;
 	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.bg-inner-insta {
+	width: 60%;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
@@ -142,7 +152,7 @@ main.fade-in {
 	}
 }
 
-/* CSS for screens till 1180px */
+/* CSS for screens till 768px */
 @media (min-width: 768px) {
 	.full-size-about {
 		position: relative;
@@ -160,9 +170,13 @@ main.fade-in {
 		justify-content: center;
 		text-align: center;
 	}
+	.logo {
+		width: 500px !important;
+		height: 500px !important;
+	}
 }
 
-/* CSS for screens up to 1180px */
+/* CSS for screens up to 768px */
 @media (max-width: 768px) {
 	.full-size-about {
 		position: relative;
@@ -178,5 +192,9 @@ main.fade-in {
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+	}
+	.logo {
+		width: 350px !important;
+		height: 350px !important;
 	}
 }
