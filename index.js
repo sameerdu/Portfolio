@@ -17,7 +17,7 @@ window.onload = () => {
 				element.classList.replace("hidden", "show");
 			});
 
-			document.getElementById("show-more").innerHTML = "Show Less";
+			document.getElementById("show-more").innerHTML = "SHOW LESS";
 
 			showMore = false;
 		} else {
@@ -29,7 +29,8 @@ window.onload = () => {
 				});
 			}
 
-			document.getElementById("show-more").innerHTML = "Show More";
+			document.getElementById("show-more").innerHTML =
+				"VIEW FULL PROJECT";
 
 			showMore = true;
 		}

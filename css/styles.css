@@ -96,6 +96,12 @@
 	display: block !important;
 }
 
+.img-size {
+	width: 100%;
+	height: 90%;
+	object-fit: scale-down;
+}
+
 a {
 	color: inherit;
 	text-decoration: none;
