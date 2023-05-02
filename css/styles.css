@@ -88,6 +88,14 @@
 	color: var(--primary-color) !important;
 }
 
+.hidden {
+	display: none !important;
+}
+
+.show {
+	display: block !important;
+}
+
 a {
 	color: inherit;
 	text-decoration: none;
